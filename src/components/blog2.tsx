@@ -1,8 +1,10 @@
+"use client"
+
 import React, { useEffect, useRef } from "react";
 import Image from "next/image"; // Use Next.js's Image component
 import benkov2 from "../app/images/benkov2.jpg";
 import benkov1 from "../app/images/benkov1.jpg"
-import ScrollReveal from "scrollreveal"
+
 const Blog2: React.FC = () => {
   
   const cards = [
@@ -18,56 +20,10 @@ const Blog2: React.FC = () => {
     },
   ];
 
-  const newsRef = useRef<HTMLDivElement | null>(null);
-  const eventRef = useRef<HTMLDivElement | null>(null);
-  const circleRef = useRef<HTMLDivElement | null>(null);
-
-   useEffect(() => {
-    // Dynamically import ScrollReveal to avoid SSR issues
-    const loadScrollReveal = async () => {
-      if (typeof window !== "undefined") {
-        const ScrollReveal = (await import("scrollreveal")).default;
-
-        if (newsRef.current) {
-          ScrollReveal().reveal(newsRef.current, {
-            origin: "top",
-            distance: "80px",
-            duration: 1000,
-            delay: 300,
-            easing: "ease",
-            reset: false,
-          });
-        }
-
-        if (circleRef.current) {
-          ScrollReveal().reveal(circleRef.current, {
-            origin: "top",
-            distance: "80px",
-            duration: 1000,
-            delay: 300,
-            easing: "ease",
-            reset: false,
-          });
-        }
-
-        if (eventRef.current) {
-          ScrollReveal().reveal(eventRef.current, {
-            origin: "top",
-            distance: "80px",
-            duration: 1000,
-            delay: 300,
-            easing: "ease",
-            reset: false,
-          });
-        }
-      }
-    };
-
-    loadScrollReveal();
-  }, []);
+ 
   return (
     <div className="w-full px-28 pt-8 xl:px-0 bg-black">
-      <div ref={eventRef}  className="px-20 xl:px-12 nb:px-5">
+      <div   className="px-20 xl:px-12 nb:px-5">
         <h2 className="font-bold text-[30px]  text-[#F7EF8A] text-center">Dizayner</h2>
         <div className="flex justify-center sm:flex-col sm:items-center gap-4 mt-6">
           {cards.map((card, index) => (

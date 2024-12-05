@@ -4,7 +4,7 @@ import book from "../app/images/book2.png";
 import thread from "../app/images/thread2.png"
 import art from "../app/images/art2.png"
 import React, { useEffect, useRef } from "react";
-import ScrollReveal from "scrollreveal"
+
 export const card = [
   {
     title: "Pedagog",
@@ -26,58 +26,13 @@ export const card = [
  
 
 const Services: React.FC = () => {
-   const newsRef = useRef<HTMLDivElement | null>(null);
-  const eventRef = useRef<HTMLDivElement | null>(null);
-  const circleRef = useRef<HTMLDivElement | null>(null);
 
-   useEffect(() => {
-    // Dynamically import ScrollReveal to avoid SSR issues
-    const loadScrollReveal = async () => {
-      if (typeof window !== "undefined") {
-        const ScrollReveal = (await import("scrollreveal")).default;
 
-        if (newsRef.current) {
-          ScrollReveal().reveal(newsRef.current, {
-            origin: "top",
-            distance: "80px",
-            duration: 1000,
-            delay: 300,
-            easing: "ease",
-            reset: false,
-          });
-        }
-
-        if (circleRef.current) {
-          ScrollReveal().reveal(circleRef.current, {
-            origin: "top",
-            distance: "80px",
-            duration: 1000,
-            delay: 300,
-            easing: "ease",
-            reset: false,
-          });
-        }
-
-        if (eventRef.current) {
-          ScrollReveal().reveal(eventRef.current, {
-            origin: "top",
-            distance: "80px",
-            duration: 1000,
-            delay: 300,
-            easing: "ease",
-            reset: false,
-          });
-        }
-      }
-    };
-
-    loadScrollReveal();
-  }, []);
   return (
     <div className="w-full px-28 py-16 bg-black xl:px-0 ">
       <div className="px-20 xl:px-12 nb:px-5 ">
-        <h2 ref={eventRef} className="font-bold text-[30px] text-[#F7EF8A] text-center">Servislar</h2>
-        <div  ref={circleRef} className="flex justify-center sm:flex-col sm:items-center gap-4 mt-6">
+        <h2  className="font-bold text-[30px] text-[#F7EF8A] text-center">Servislar</h2>
+        <div   className="flex justify-center sm:flex-col sm:items-center gap-4 mt-6">
           {card.map((service, index) => (
             <div
               key={index}

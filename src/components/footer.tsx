@@ -1,3 +1,5 @@
+
+"use client"
 import React, { useEffect, useRef } from 'react';
 import ScrollReveal from "scrollreveal"
 interface FooterProps {
@@ -5,55 +7,9 @@ interface FooterProps {
 }
 
 const Footer: React.FC<FooterProps> = ({ setActiveComponent }) => {
-    const newsRef = useRef<HTMLDivElement | null>(null);
-  const eventRef = useRef<HTMLDivElement | null>(null);
-  const circleRef = useRef<HTMLDivElement | null>(null);
-
- useEffect(() => {
-    // Dynamically import ScrollReveal to avoid SSR issues
-    const loadScrollReveal = async () => {
-      if (typeof window !== "undefined") {
-        const ScrollReveal = (await import("scrollreveal")).default;
-
-        if (newsRef.current) {
-          ScrollReveal().reveal(newsRef.current, {
-            origin: "top",
-            distance: "80px",
-            duration: 1000,
-            delay: 300,
-            easing: "ease",
-            reset: false,
-          });
-        }
-
-        if (circleRef.current) {
-          ScrollReveal().reveal(circleRef.current, {
-            origin: "top",
-            distance: "80px",
-            duration: 1000,
-            delay: 300,
-            easing: "ease",
-            reset: false,
-          });
-        }
-
-        if (eventRef.current) {
-          ScrollReveal().reveal(eventRef.current, {
-            origin: "top",
-            distance: "80px",
-            duration: 1000,
-            delay: 300,
-            easing: "ease",
-            reset: false,
-          });
-        }
-      }
-    };
-
-    loadScrollReveal();
-  }, []);
+   
   return (
-    <footer ref={eventRef} className="bg-[2A4E8D] text-white px-28 py-16 xl:px-0 w-full  ">
+    <footer className="bg-[2A4E8D] text-white px-28 py-16 xl:px-0 w-full  ">
       <div className="px-20 xl:px-12 nb:px-5 grid grid-cols-4 gap-8 2xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-1">
         {/* Info Section */}
         <div>
