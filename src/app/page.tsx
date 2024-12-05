@@ -25,7 +25,7 @@ const Home = () => {
       <Blog2 />
       <Blog3 />
       <Shaxsiy />
-      <Footer setActiveComponent={setActiveComponent} />
+      <Footer/>
     </main>
   );
 };

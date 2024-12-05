@@ -1,12 +1,8 @@
 
 "use client"
-import React, { useEffect, useRef } from 'react';
-import ScrollReveal from "scrollreveal"
-interface FooterProps {
-  setActiveComponent: (component: string) => void;
-}
 
-const Footer: React.FC<FooterProps> = ({ setActiveComponent }) => {
+
+const Footer: React.FC  = () =>  {
    
   return (
     <footer className="bg-[2A4E8D] text-white px-28 py-16 xl:px-0 w-full  ">
@@ -17,7 +13,7 @@ const Footer: React.FC<FooterProps> = ({ setActiveComponent }) => {
           <ul className="space-y-2 text-gray-400">
             <li>
               <button
-                onClick={() => setActiveComponent('about')}
+            
                 className="hover:text-white"
               >
                 Asosiy
@@ -25,7 +21,7 @@ const Footer: React.FC<FooterProps> = ({ setActiveComponent }) => {
             </li>
             <li>
               <button
-                onClick={() => setActiveComponent('services')}
+               
                 className="hover:text-white"
               >
                Men Haqimda

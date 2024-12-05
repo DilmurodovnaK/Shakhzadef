@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect, useRef } from 'react'
+
 import abouts from "../app/images/about.jpg"
 import ScrollReveal from "scrollreveal"
 const About = () => {

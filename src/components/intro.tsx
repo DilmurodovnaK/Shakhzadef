@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect, useRef } from 'react'
+
 import photo from "../app/images/intro2.png"
 import ScrollReveal from "scrollreveal"
 

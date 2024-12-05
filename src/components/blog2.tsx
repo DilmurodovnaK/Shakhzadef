@@ -1,6 +1,5 @@
 "use client"
 
-import React, { useEffect, useRef } from "react";
 import Image from "next/image"; // Use Next.js's Image component
 import benkov2 from "../app/images/benkov2.jpg";
 import benkov1 from "../app/images/benkov1.jpg"

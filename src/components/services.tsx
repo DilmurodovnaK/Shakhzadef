@@ -3,7 +3,7 @@ import Image from "next/image";
 import book from "../app/images/book2.png";
 import thread from "../app/images/thread2.png"
 import art from "../app/images/art2.png"
-import React, { useEffect, useRef } from "react";
+
 
 export const card = [
   {

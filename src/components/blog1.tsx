@@ -1,6 +1,5 @@
 "use client"
 
-import React, { useEffect, useRef } from "react";
 import Image from "next/image"; // Use Next.js's Image component
 import pedagogg from "../app/images/pedagogg.jpg";
 import pedagog2 from "../app/images/pedagog2.jpg"
