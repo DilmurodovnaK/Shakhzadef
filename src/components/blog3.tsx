@@ -1,8 +1,8 @@
 "use client"
 
 import Image from "next/image"; // Use Next.js's Image component
-import muzey1 from "../app/images/muzey1.jpg";
-import muzey2 from "../app/images/muzey2.jpg"
+import muzey1 from "@/app/images/muzey1.jpg";
+import muzey2 from "@/app/images/muzey2.jpg"
 import ScrollReveal from "scrollreveal"
 const Blog3: React.FC = () => {
     

@@ -1,8 +1,8 @@
 "use client"
 
 import Image from "next/image"; // Use Next.js's Image component
-import pedagogg from "../app/images/pedagogg.jpg";
-import pedagog2 from "../app/images/pedagog2.jpg"
+import pedagogg from "@/app/images/pedagogg.jpg";
+import pedagog2 from "@/app/images/pedagog2.jpg"
 import ScrollReveal from "scrollreveal"
 const Blog1: React.FC = () => {
    

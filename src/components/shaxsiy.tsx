@@ -1,8 +1,8 @@
 "use client"
 
-import blog1 from "../app/images/blog1.jpg";
-import blog2 from "../app/images/blog2.jpg";
-import blog3 from "../app/images/blog3.jpg";
+import blog1 from "@/app/images/blog1.jpg";
+import blog2 from "@/app/images/blog2.jpg";
+import blog3 from "@/app/images/blog3.jpg";
 
 const Shaxsiy = () => {
  

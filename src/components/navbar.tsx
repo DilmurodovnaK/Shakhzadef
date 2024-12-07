@@ -2,8 +2,8 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { CodeIcon, HamburgetMenuClose, HamburgetMenuOpen } from "./icons"
-import logo from "../app/images/logo.jpg"
+import { CodeIcon, HamburgetMenuClose, HamburgetMenuOpen } from "@/components/icons"
+import logo from "@/app/images/logo.jpg"
 const Navbar: React.FC = () => {
   const [click, setClick] = useState(false);
   const [isOpen, setIsOpen] = useState(false);

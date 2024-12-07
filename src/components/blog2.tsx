@@ -1,8 +1,8 @@
 "use client"
 
 import Image from "next/image"; // Use Next.js's Image component
-import benkov2 from "../app/images/benkov2.jpg";
-import benkov1 from "../app/images/benkov1.jpg"
+import benkov2 from "@/app/images/benkov2.jpg";
+import benkov1 from "@/app/images/benkov1.jpg"
 
 const Blog2: React.FC = () => {
   

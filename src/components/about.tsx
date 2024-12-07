@@ -1,6 +1,6 @@
 "use client"
 
-import abouts from "../app/images/about.jpg"
+import abouts from "@/app/images/about.jpg"
 import ScrollReveal from "scrollreveal"
 const About = () => {
  

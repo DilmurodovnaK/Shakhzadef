@@ -1,7 +1,7 @@
 "use client"
 
 
-import photo from "../app/images/intro2.png"
+import photo from "@/app/images/intro2.png"
 import ScrollReveal from "scrollreveal"
 
 const Intro: React.FC = () => {
